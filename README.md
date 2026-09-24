@@ -1,4 +1,4 @@
-# secure-ipmi-terminal
+# ansible-debian-ipmi-terminal
 
 家庭内のBMC/IPMI管理専用端末を、Debian 13 + Ansibleで再構築可能にするためのCookbookです。
 
@@ -55,13 +55,13 @@
 GitHub上では以下を想定します。
 
 ```text
-https://github.com/r-agatsuma/secure-ipmi-terminal
+https://github.com/r-agatsuma/ansible-debian-ipmi-terminal
 ```
 
-ZIPを展開して新規repositoryへ初回pushする場合の例です。GitHub側で空の`secure-ipmi-terminal` repositoryを作成してから実行します。
+ZIPを展開して新規repositoryへ初回pushする場合の例です。GitHub側で空の`ansible-debian-ipmi-terminal` repositoryを作成してから実行します。
 
 ```bash
-cd secure-ipmi-terminal
+cd ansible-debian-ipmi-terminal
 git init
 git add .
 git commit -m "feat: initial secure IPMI terminal cookbook"
@@ -527,7 +527,7 @@ verify
 端末では以下の形で更新します。
 
 ```bash
-cd ~/secure-ipmi-terminal
+cd ~/ansible-debian-ipmi-terminal
 git pull
 sudo ansible-playbook bootstrap.yml
 sudo ansible-playbook configure.yml
